@@ -9,6 +9,10 @@ uci add dhcp domain
 uci set "dhcp.@domain[-1].name=time.android.com"
 uci set "dhcp.@domain[-1].ip=203.107.6.88"
 
+# --- 新增：关闭重绑定保护 ---
+uci set dhcp.@dnsmasq[0].rebind_protection='0'
+uci commit dhcp
+
 # 检查配置文件是否存在
 SETTINGS_FILE="/etc/config/pppoe-settings"
 if [ ! -f "$SETTINGS_FILE" ]; then
