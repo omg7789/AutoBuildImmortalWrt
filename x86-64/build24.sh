@@ -80,6 +80,7 @@ PACKAGES="$PACKAGES kmod-usb-net-rndis"
 PACKAGES="$PACKAGES kmod-usb-net"
 PACKAGES="$PACKAGES kmod-iwlwifi"
 PACKAGES="$PACKAGES iwlwifi-firmware-iwl7260"
+PACKAGES="$PACKAGES hostapd"
 
 # 文件管理器
 PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
